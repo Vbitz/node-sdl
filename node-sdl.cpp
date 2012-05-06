@@ -2,7 +2,11 @@
 #include <v8.h>
 #include <node.h>
 
+#ifndef WIN32
+#include <sdl/SDL.h>
+#else
 #include <SDL.h>
+#endif
 
 using namespace v8;
 using namespace node;
